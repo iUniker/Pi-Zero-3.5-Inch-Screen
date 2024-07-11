@@ -1,0 +1,14 @@
+dtoverlay=spi0-0cs
+dtoverlay=ads7846,penirq=27,swapxy=1,xmin=150,xmax=3970,ymin=150,ymax=3970
+
+dtoverlay=vc4-kms-v3d
+max_framebuffers=2
+
+dtoverlay=vc4-kms-dpi-generic
+dtparam=hactive=320,hfp=20,hsync=10,hbp=10
+dtparam=vactive=480,vfp=10,vsync=2,vbp=2
+dtparam=clock-frequency=12000000
+dtparam=hsync-invert,vsync-invert,pixclk-invert
+dtparam=rgb565-padhi
+dtparam=backlight-gpio=18
+gpio=18=op,dh,pd
